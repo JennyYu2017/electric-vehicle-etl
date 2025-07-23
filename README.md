@@ -39,11 +39,11 @@ The code is written in **Python** and includes data exploration, cleaning, trans
 
 ### 4. Load
 - Constructed dimension tables:
-  - dim_vehicle (with encoded EV type and CAFV eligibility)
   - dim_EVtype and dim_CAFV (lookup tables for dim_vehicle table)
   - dim_location (with generated location_id)
   - dim_electric_utility (with encoded values)
-
+  
+- Constructed 'fact_vehicle' fact table with encoded EV type and CAFV eligibility
 - Constructed `fact_ev` fact table with `event_id` as primary key.
 - Extracted longitude and latitude from location strings for spatial data storage.
 
